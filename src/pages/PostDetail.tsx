@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { useParams, Navigate} from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import postData from '../data/posts.json'
