@@ -1,15 +1,15 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import PostDetail from './pages/PostDetail';
 
 function App() {
   return (
-    <BrowserRouter basename="/vlog_dev">
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/post/:slug" element={<PostDetail />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
